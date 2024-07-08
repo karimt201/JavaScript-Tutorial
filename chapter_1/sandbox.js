@@ -1,24 +1,19 @@
-let age = 25;
+// type conversion
+let score = '100';
 
-// loose comparison (different types can still be equal)
+num = Number(score);
+console.log(num + 1);
+// 101
+console.log(typeof num);
+// number
 
-console.log(age == 25);
+// let result = Number('hello');
+// NaN 'number'
+
+let result = String(50);
+// 50 string
+// let result = Boolean(100);
 // true
-console.log(age == '25');
-// true
-console.log(age != 25);
+// let result = Boolean(0);
 // false
-console.log(age != '25');
-// false
-
-
-// strict comparison (different types cannot be equal)
-
-console.log(age === 25);
-// true
-console.log(age === '25');
-// false
-console.log(age !== 25);
-// false
-console.log(age !== '25');
-// true
+console.log(result, typeof result);
