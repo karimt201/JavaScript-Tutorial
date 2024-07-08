@@ -1,25 +1,33 @@
-// template strings
-const title = 'best reads of 2019';
-const author = 'mario';
-const likes = 30;
+let ninja = ['shaun' , 'ryu' , 'chun-li'];
 
-// concattenation way
-// let result = 'the blog called ' + title + ' by ' + author + ' has ' + likes + ' likes';
+// ninja[1]='ken'
+// console.log(ninja[1]);
+// 'ryu'
 
+// let ages = [20,25,30,35];
+// console.log(ages[0]);
+// 20
 
-// the blog called best reads of 2019 by mario has 30 likes
+// let random = ['shaun' , 'crystal' , 20, 30];
 
-// template string way
-let result = `the blog called ${title} by ${author} has ${likes} likes`;
+// console.log(random[3]);
+// 30
+
+// console.log(ninja.length);
+// 3
+
+// array methods
+
+// let result = ninja.join('-');
+// shaun-ryu-chun-li
+// let result = ninja.indexOf('ryu');
+// (3)
+// let result = ninja.concat(['ken','crystal']);
+// (5) ['shaun', 'ryu', 'chun-li', 'ken', 'crystal']
+// let result = ninja.push('ken')
+// (4) ['shaun', 'ryu', 'chun-li', 'ken']
+let result = ninja.pop();
+//  ['shaun', 'ryu']
 console.log(result);
-// the blog called best reads of 2019 by mario has 30 likes
+console.log(ninja);
 
-
-// creating html templates
-let html = `
-    <h2>${title}</h2>
-    <p>${author}</p>
-    <span> this blog has ${likes} likes </span>
-`;
-
-console.log(html);
