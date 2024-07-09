@@ -1,19 +1,15 @@
-// type conversion
-let score = '100';
+// for loop
 
-num = Number(score);
-console.log(num + 1);
-// 101
-console.log(typeof num);
-// number
+// for(let i = 3 ; i < 5 ; i++){
+//     console.log('in loop', i);
+// }
 
-// let result = Number('hello');
-// NaN 'number'
+// console.log('loop finished');
 
-let result = String(50);
-// 50 string
-// let result = Boolean(100);
-// true
-// let result = Boolean(0);
-// false
-console.log(result, typeof result);
+const names = ['shaun','mario','luigi'];
+
+for(let i =0 ; i < names.length ; i++){
+    console.log(names[i]);
+    let html = `<div>${names[i]}</div>`;
+    console.log(html);
+}
