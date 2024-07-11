@@ -1,40 +1,19 @@
-// object literals
+// Math object
 
-// const blogs = [
-//     {title : 'why mac and cheese rules', likes : 30},
-//     {title : '10 things to make with marmite', likes : 50}
-// ];
+console.log(Math);
+console.log(Math.PI);
+console.log(Math.E);
 
-// console.log(blogs);
+const area = 7.7;
 
-let user = {
-    name : 'crystal',
-    age : 30,
-    email : 'crystal@ninja.com',
-    location : 'berlin',
-    Blog : [
-        {title : 'why mac and cheese rules', likes : 30},
-        {title : '10 things to make with marmite', likes : 50}
-    ],
-    login() {
-        console.log('the user logged in ');
-    },
-    logout() {
-        console.log('the user logged out');
-    },
-    logblog(){
-        console.log('this user has written this following blog :');
-        this.Blog.forEach(h => {
-            console.log(h.title,h.likes);
-        })
-    }
-};
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
 
-user.login();
-user.logout();
-user.logblog();
+// rondom numbers
 
-a = ['a','b','c','d'];
-a.forEach(function (person,index) {
-    console.log(person,index);
-});
+const rondom = Math.random();
+
+console.log(Math.round(rondom *1000));
+
