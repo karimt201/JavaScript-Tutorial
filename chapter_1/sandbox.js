@@ -16,6 +16,6 @@ const userTwo = userOne;
 
 console.log(userOne,userTwo);
 
-userOne.age = 20;
+userOne.age = 50;
 
 console.log(userOne,userTwo);
