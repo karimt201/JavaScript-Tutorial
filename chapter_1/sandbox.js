@@ -1,7 +1,24 @@
-const title = document.querySelector('h1');
+// const content = document.querySelector('p');
 
-// title.setAttribute('style','margin: 50px;');
+// console.log(content.classList);
 
-title.style.margin = '';
-title.style.color = 'crimson';
-title.style.fontSize = '40px';
+// content.classList.add('error');
+// content.classList.remove('error');
+
+// content.classList.add('success');
+
+const paras = document.querySelectorAll('p');
+
+// console.log(paras);
+paras.forEach(tag => {
+    if (tag.innerText.includes('error')) {
+        tag.classList.add('error');
+    }if (tag.innerText.includes('success')) {
+        tag.classList.add('success');
+    }
+});
+
+const title = document.querySelector('.title');
+
+title.classList.toggle('test');
+title.classList.toggle('test');
